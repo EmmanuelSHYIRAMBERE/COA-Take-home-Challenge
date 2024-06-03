@@ -1,3 +1,11 @@
+/* Parent container */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #888;
+}
+
 /* General gallery styling */
 .gallery {
   display: flex;
@@ -7,7 +15,6 @@
   height: 588px;
   min-width: 400px;
   gap: 2px;
-  background: #888;
 }
 
 /* Individual image interaction container */
@@ -17,6 +24,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 /* Overlay styling */
@@ -34,6 +45,7 @@
   color: white;
   box-sizing: border-box;
   transition: opacity 0.3s ease;
+  opacity: 0;
   z-index: 1;
 }
 
@@ -62,7 +74,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 /* Image content styling */
@@ -92,21 +103,21 @@
 }
 
 /* Hover effects */
+.image-interaction:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
 .image-interaction:hover .rectangle-1 {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.image-interaction:hover .overlays {
+  opacity: 1;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
-  .gallery {
-    width: 400px;
-    height: 600px;
-    top: 1490px;
-    left: -355px;
-    gap: 2px;
-    opacity: 0px;
-  }
-
   .image-interaction {
     width: 98.5px;
     height: 100%;
@@ -115,31 +126,17 @@
   image-interaction:nth-child(odd) {
     margin-right: 20px;
   }
-
-  .overlays {
-    display: none;
-  }
 }
 
 /* Media query for medium screens */
-@media (max-width: 1060) {
+@media (max-width: 960px) {
   .gallery {
-    width: 800px;
-    height: 600px;
+    width: 100%;
     gap: 2px;
-    opacity: 0px;
   }
 
   .image-interaction {
-    width: 195px;
-    height: 100%;
-  }
-
-  image-interaction:nth-child(odd) {
-    margin-right: 20px;
-  }
-
-  .overlays {
-    display: none;
+    width: calc(100% / 4 - 2px);
+    height: auto;
   }
 }
