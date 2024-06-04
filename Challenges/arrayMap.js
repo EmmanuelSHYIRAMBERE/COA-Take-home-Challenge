@@ -1,16 +1,36 @@
 /**
- * Checks if a contiguous subarray within the given array 'arr' adds up to the target sum 'target'
- *
- * @param {number[]} arr - An array of integers.
- * @param {number} target - The target sum to be found in a contiguous subarray.
- * @returns {boolean} - True if a subarray exists that sums up to the target, False otherwise.
+ * The function below checks if a contiguous subarray within the given array 'arr' adds up to the target sum 'target'
  */
 function hasContiguousSum(arr, target) {
   // Initialize variables to track the current sum and the starting index of the subarray
   let currentSum = 0;
   let left = 0;
 
-  // Loop through the entire array
+  // Check if the array contains between 1 and 100,000 elements.
+  if (arr.length < 1 || arr.length > 100000) {
+    throw new Error(
+      "Invalid array elements, the array will contain between 1 and 100,000 elements."
+    );
+  }
+
+  // Check if the target is below or exceeds the limit
+  if (target < -1000000000 || target > 1000000000) {
+    throw new Error(
+      "Invalid target, the target must range between -1,000,000,000 and 1,000,000,000."
+    );
+  }
+
+  // Loop through the entire array to check if the current element is outside the valid range
+  for (let index = 0; index < arr.length; index++) {
+    // Check if the current element is outside the valid range
+    if (arr[index] < -1000000000 || arr[index] > 1000000000) {
+      throw new Error(
+        "Array contains elements outside the valid range (-1,000,000,000 to 1,000,000,000)"
+      );
+    }
+  }
+
+  // Loop through the entire array for sub array manipulation
   for (let right = 0; right < arr.length; right++) {
     // Add the current element to the running total
     currentSum += arr[right];
@@ -35,12 +55,7 @@ function hasContiguousSum(arr, target) {
 }
 
 // Example usage
-const arr = [4, 2, 7, 1, 9, 5];
+const arr = [4, 2, 7, 1, 9, 10000000005];
 const target = 14;
 const result = hasContiguousSum(arr, target);
-console.log(result); // Output: true (because [4, 2, 7, 1] sums up to 14)
-
-/*
-Time Complexity: O(n) - The code iterates through the input array only once using a sliding window approach.
-Space Complexity: O(1) - It uses a constant amount of extra space for variables currentSum and left.
-*/
+console.log(result);
