@@ -8,8 +8,6 @@
 
 Thank you for visiting my README! Feel free to explore the project and reach out if you have any questions or feedback. Your interest and contributions are greatly appreciated!
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <br />
 <div align="center">
 
@@ -47,7 +45,7 @@ Thank you for visiting my README! Feel free to explore the project and reach out
 
 ## About The Project
 
-[![Product Screen Shot][product-screenshot]]
+![Product Screen Shot](images/galleryScreenshot.png)
 
 This project includes an interactive photo gallery and solutions to two coding challenges. It demonstrates my ability to build a web application using HTML, CSS, and JavaScript, and my JavaScript problem-solving skills.
 
@@ -55,9 +53,9 @@ This project includes an interactive photo gallery and solutions to two coding c
 
 ### Built With
 
-- [![HTML5][HTML5]][HTML5-url]
-- [![CSS3][CSS3]][CSS3-url]
-- [![JavaScript][JavaScript]][JavaScript-url]
+- [HTML5][HTML5-url]
+- [CSS3][CSS3-url]
+- [JavaScript][JavaScript-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,9 +96,9 @@ Make sure you have a modern web browser installed (e.g., Chrome, Firefox).
 
 - Online JavaScript Editors
 
-  1. [![JSFiddle][JSFiddle]][JSFiddle-url]
-  2. [![CodePen][CodePen]][CodePen-url]
-  3. [![JSBin][JSBin]][JSBin-url]
+  1. [JSFiddle][JSFiddle-url]
+  2. [CodePen][CodePen-url]
+  3. [JSBin][JSBin-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +141,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Emmanuel SHYIRAMBERE - [@emashyirambere1](https://x.com/emashyirambere1) - emashyirambere1@gmail.com
+Emmanuel SHYIRAMBERE - [@emashyirambere1](https://x.com/emashyirambere1) - emashyirambere1@gmail.com - [shyirambere-emmanuel](https://www.linkedin.com/in/shyirambere-emmanuel-584986289/)
 
 Project Link: [https://github.com/EmmanuelSHYIRAMBERE/COA-Take-home-Challenge](https://github.com/EmmanuelSHYIRAMBERE/COA-Take-home-Challenge)
 
@@ -152,7 +150,6 @@ Project Link: [https://github.com/EmmanuelSHYIRAMBERE/COA-Take-home-Challenge](h
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [linkedin-url]: https://www.linkedin.com/in/shyirambere-emmanuel-584986289/
-[product-screenshot]: images/galleryScreenshot.png
 [HTML5-url]: https://html.com/html5/
 [CSS3-url]: https://www.w3schools.com/css/
 [JavaScript-url]: https://www.javascript.com/
