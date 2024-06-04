@@ -6,14 +6,13 @@
 *** our interest and contributions are greatly appreciated!
 -->
 
-Thank you for visiting my README! Feel free to explore the project and reach out if you have any questions or feedback. Your interest and contributions are greatly appreciated!
-
 <br />
 <div align="center">
 
   <h3 align="center">COA Take Home Challenge Guides</h3>
 
-  <p align="center">A comprehensive Code of Africa take-home coding challenge with setup instructions and explanations!
+  <p align="center">A comprehensive Code of Africa take-home coding challenge with setup instructions and explanations! This repository contains solutions to two coding challenges and an interactive photo gallery project built using HTML, CSS, and JavaScript.
+    <br />
     <br />
   </p>
 </div>
@@ -139,6 +138,9 @@ Emmanuel SHYIRAMBERE - [@emashyirambere1](https://x.com/emashyirambere1) - emash
 
 Project Link: [https://github.com/EmmanuelSHYIRAMBERE/COA-Take-home-Challenge](https://github.com/EmmanuelSHYIRAMBERE/COA-Take-home-Challenge)
 
+<p align="center"><br /><br />Thank you for visiting my README! Feel free to explore the project and reach out if you have any questions or feedback. Your interest and contributions are greatly appreciated!
+    <br />
+  </p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
