@@ -45,8 +45,6 @@ Thank you for visiting my README! Feel free to explore the project and reach out
 
 ## About The Project
 
-![Product Screen Shot](images/galleryScreenshot.png)
-
 This project includes an interactive photo gallery and solutions to two coding challenges. It demonstrates my ability to build a web application using HTML, CSS, and JavaScript, and my JavaScript problem-solving skills.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,11 +84,7 @@ Make sure you have a modern web browser installed (e.g., Chrome, Firefox).
 - Browser Console
 
   1. Open your web browser.
-  2. Open the developer tools:
-
-  - [x] Press `F12` or `Ctrl+Shift+I` on Windows/Linux OS
-  - [x] Click `Cmd+Opt+I` on Mac OS
-
+  2. Press `F12` or `Ctrl+Shift+I` on Windows/Linux OS or `Cmd+Opt+I` on Mac OS
   3. Go to the `Console` tab.
   4. Type or paste your JavaScript code found in `Challenges` folder in the cloned repo and press `Enter`.
 
