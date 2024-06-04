@@ -21,8 +21,14 @@ function createOverlays(item) {
   location.classList.add("location");
   location.textContent = item.location;
 
+  const details = document.createElement("a");
+  details.href = "#";
+  details.innerHTML = "Know more &#8594;";
+  details.classList.add("details");
+
   info.appendChild(subjectName);
   info.appendChild(location);
+  info.appendChild(details);
 
   overlays.appendChild(info);
 

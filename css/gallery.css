@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #888;
+  background: #000;
 }
 
 /* General gallery styling */
@@ -45,7 +45,6 @@
   color: white;
   box-sizing: border-box;
   transition: opacity 0.3s ease;
-  opacity: 0;
   z-index: 1;
 }
 
@@ -55,10 +54,10 @@
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 10px;
 }
 
 /* Location styling */
@@ -66,7 +65,18 @@
   font-family: Poppins, sans-serif;
   font-size: 12px;
   font-weight: 400;
-  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Details styling */
+.details {
+  font-family: Poppins, sans-serif;
+  color: #00dbff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 /* Image container styling */
@@ -103,17 +113,11 @@
 }
 
 /* Hover effects */
-.image-interaction:hover {
-  transform: scale(1.1);
-  z-index: 2;
-}
-
-.image-interaction:hover .rectangle-1 {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.image-interaction:hover .overlays {
-  opacity: 1;
+.image:hover {
+  filter: blur(10px);
+  filter: grayscale(100%);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 /* Media query for smaller screens */
