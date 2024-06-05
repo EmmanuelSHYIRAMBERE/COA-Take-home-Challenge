@@ -7,14 +7,14 @@ function transformString(originalString) {
   // Validate input string content (optional)
   if (!/^[a-zA-Z0-9 ]+$/.test(originalString)) {
     throw new Error(
-      "Invalid characters found. Only alphanumeric characters and spaces allowed."
+      `Invalid characters found in your input: : "\${originalString}\". Only alphanumeric characters and spaces allowed.`
     );
   }
 
   // Check if the string is empty or exceeds the limit
   if (length === 0 || length > 1000) {
     throw new Error(
-      "Invalid string length, the length of the string should be between 1 and 1000."
+      `Invalid string length: "\${length}\", the length of the string should be between 1 and 1000.`
     );
   }
 
@@ -37,7 +37,7 @@ function transformString(originalString) {
       .join(" ");
   } else {
     // Not divisible by 3 or 5: return the original string
-    transformedString = `The input string length is not divisible by 3 or divisible by 5: ${originalString}`;
+    transformedString = `The input string length: \"${length}\" is not divisible by 3 or divisible by 5. The Original string: \"${originalString}\"`;
   }
 
   return transformedString;

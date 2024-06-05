@@ -9,14 +9,14 @@ function hasContiguousSum(arr, target) {
   // Check if the array contains between 1 and 100,000 elements.
   if (arr.length < 1 || arr.length > 100000) {
     throw new Error(
-      "Invalid array elements, the array will contain between 1 and 100,000 elements."
+      `Invalid array: \"${arr.length}\" elements, the array will contain between 1 and 100,000 elements.`
     );
   }
 
   // Check if the target is below or exceeds the limit
   if (target < -1000000000 || target > 1000000000) {
     throw new Error(
-      "Invalid target, the target must range between -1,000,000,000 and 1,000,000,000."
+      `Invalid target: \"${target}\", the target must range between -1,000,000,000 and 1,000,000,000.`
     );
   }
 
@@ -25,7 +25,7 @@ function hasContiguousSum(arr, target) {
     // Check if the current element is outside the valid range
     if (arr[index] < -1000000000 || arr[index] > 1000000000) {
       throw new Error(
-        "Array contains elements outside the valid range (-1,000,000,000 to 1,000,000,000)"
+        `Array contains element: \"${arr[index]}\" which is outside the valid range (-1,000,000,000 to 1,000,000,000)`
       );
     }
   }
