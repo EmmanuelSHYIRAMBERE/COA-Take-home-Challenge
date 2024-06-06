@@ -35,6 +35,42 @@ function createOverlays(item) {
   return overlays;
 }
 
+// Function to handle mouseenter event for hover effect
+function handleMouseEnter(event) {
+  const imageInteraction = event.currentTarget;
+  const image = imageInteraction.querySelector(".image");
+  const rectangle = imageInteraction.querySelector(".rectangle-1");
+  const subjectName = imageInteraction.querySelector(".subject-name");
+  const location = imageInteraction.querySelector(".location");
+  const details = imageInteraction.querySelector(".details");
+
+  image.style.filter = "blur(5px) grayscale(100%)";
+  image.style.transform = "scale(1.1)";
+  rectangle.style.background =
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%)";
+  subjectName.style.transform = "translateY(-30px)";
+  location.style.transform = "translateY(-35px)";
+  details.style.opacity = "1";
+}
+
+// Function to handle mouseleave event for hover effect
+function handleMouseLeave(event) {
+  const imageInteraction = event.currentTarget;
+  const image = imageInteraction.querySelector(".image");
+  const rectangle = imageInteraction.querySelector(".rectangle-1");
+  const subjectName = imageInteraction.querySelector(".subject-name");
+  const location = imageInteraction.querySelector(".location");
+  const details = imageInteraction.querySelector(".details");
+
+  image.style.filter = "none";
+  image.style.transform = "none";
+  rectangle.style.background =
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)";
+  subjectName.style.transform = "none";
+  location.style.transform = "none";
+  details.style.opacity = "0";
+}
+
 // Function to create and return the image container
 function createImageContainer(item) {
   const imageInteraction = document.createElement("div");
@@ -62,6 +98,10 @@ function createImageContainer(item) {
 
   imageInteraction.appendChild(overlays);
   imageInteraction.appendChild(imageContainer);
+
+  // Add event listeners for hover effect
+  imageInteraction.addEventListener("mouseenter", handleMouseEnter);
+  imageInteraction.addEventListener("mouseleave", handleMouseLeave);
 
   // Swap the thumbnail with the main image after a brief delay
   setTimeout(() => {
